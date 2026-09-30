@@ -1,22 +1,19 @@
 images:
   repository: ghcr.io/arni005/boutique
-  tag: "a13e8c815b1e2e5528513f26875912bda07ed668"            # CI overwrites this line
-
+  tag: "dddf55cc275261b49fc172957dbafd44eb0d3621" # CI overwrites this line
 loadGenerator:
   create: false
-
 ingress:
   enabled: true
   host: dev.13.233.91.38.nip.io
-
 # Lower the CPU *requests* so several environments fit on one small node
-adService:              {resources: {requests: {cpu: 20m}}}
-cartService:            {resources: {requests: {cpu: 20m}}}
-checkoutService:        {resources: {requests: {cpu: 20m}}}
-currencyService:        {resources: {requests: {cpu: 20m}}}
-emailService:           {resources: {requests: {cpu: 20m}}}
-frontend:               {externalService: false, resources: {requests: {cpu: 20m}}}
-paymentService:         {resources: {requests: {cpu: 20m}}}
-productCatalogService:  {resources: {requests: {cpu: 20m}}}
-recommendationService:  {resources: {requests: {cpu: 20m}}}
-shippingService:        {resources: {requests: {cpu: 20m}}}
+adService: {resources: {requests: {cpu: 20m}}}
+cartService: {resources: {requests: {cpu: 20m}}}
+checkoutService: {resources: {requests: {cpu: 20m}}}
+currencyService: {resources: {requests: {cpu: 20m}}}
+emailService: {resources: {requests: {cpu: 20m}}}
+frontend: {externalService: false, resources: {requests: {cpu: 20m}}}
+paymentService: {resources: {requests: {cpu: 20m}}}
+productCatalogService: {resources: {requests: {cpu: 20m}}}
+recommendationService: {resources: {requests: {cpu: 20m}}}
+shippingService: {resources: {requests: {cpu: 20m}}}
