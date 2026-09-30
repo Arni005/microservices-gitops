@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: boutique-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/arni005/microservices-gitops.git
+    targetRevision: main
+    path: charts/onlineboutique
+    helm:
+      valueFiles:
+        - ../../envs/prod/values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: boutique-prod
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
