@@ -1,6 +1,6 @@
 images:
   repository: ghcr.io/arni005/boutique
-  tag: "dddf55cc275261b49fc172957dbafd44eb0d3621" # CI overwrites this line
+  tag: "2ea6e1427076a61fa6ceca787272a1d9f298dfd6" # CI overwrites this line
 loadGenerator:
   create: false
 ingress:
