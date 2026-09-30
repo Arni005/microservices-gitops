@@ -5,7 +5,7 @@ loadGenerator:
   create: false
 ingress:
   enabled: true
-  host: dev.13.233.91.38.nip.io
+  host: dev.13.201.104.26.nip.io
 # Lower the CPU *requests* so several environments fit on one small node
 adService: {resources: {requests: {cpu: 20m}}}
 cartService: {resources: {requests: {cpu: 20m}}}

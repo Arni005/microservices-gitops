@@ -7,7 +7,7 @@ loadGenerator:
 
 ingress:
   enabled: true
-  host: staging.13.233.91.38.nip.io
+  host: staging.13.201.104.26.nip.io
 
 # Lower the CPU *requests* so several environments fit on one small node
 adService:              {resources: {requests: {cpu: 20m}}}
